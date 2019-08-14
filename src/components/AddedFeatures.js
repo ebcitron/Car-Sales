@@ -1,6 +1,9 @@
 import React from 'react';
 
 import AddedFeature from './AddedFeature';
+import {connect} from 'react-redux'
+
+
 
 const AddedFeatures = props => {
   return (
@@ -18,5 +21,14 @@ const AddedFeatures = props => {
     </div>
   );
 };
+
+// const mapStateToProps = state => {
+//   return{
+//     car: state.car
+//   }
+// }
+
+// export default connect(mapStateToProps, {})(AddedFeatures);
+
 
 export default AddedFeatures;
